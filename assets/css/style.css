@@ -1,0 +1,96 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 14% 75% 10%;
+    grid-template-areas: 
+    "cabecera cabecera"
+    "menuLat principal"
+    "pie pie";
+}
+button{
+    background-color: rgba(27, 14, 214, 0.976);
+    color: white;
+}
+.cabecera {
+    grid-area: cabecera;
+    color: white;
+    display: flex;
+    font-size: 35px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: rgba(27, 14, 214, 0.976);
+}
+.cabecera img{
+    border-radius: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5%;
+}
+.card_img{
+    background-image: url("../img/1.jpg");
+    width: 200px;
+    height: 200px;
+   background-size: cover;
+   background-position: center;
+}
+.card_img2{
+    background-image: url("../img/2.jpg");
+    width: 200px;
+    height: 200px;
+   background-size: cover;
+   background-position: center;
+}
+.card_img3{
+    background-image: url("../img/3.jpg");
+    width: 200px;
+    height: 200px;
+   background-size: cover;
+   background-position: center;
+}
+.card_img4{
+    background-image: url("../img/4.jpg");
+    width: 200px;
+    height: 200px;
+   background-size: cover;
+   background-position: center;
+}
+.menu_lat{  
+    grid-area: menuLat;
+    background-color: rgba(33, 37, 35, 0.225);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.secc_principal{
+    grid-area: principal;
+    background-color: rgba(33, 37, 35, 0.225);
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    overflow: auto;
+
+}
+.secc_principal img{
+    width: 200px;
+}
+.pie_pagina{
+    grid-area: pie;
+    background-color: white;
+    height: 80px;
+    text-align: center;
+}    
+
